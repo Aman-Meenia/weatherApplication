@@ -16,7 +16,7 @@ export const useGetData = () => {
     }
     setDisplay(false);
     setLoading(true);
-    const link = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=71ab7952b3fa31b7cc4330d1c11ee6aa`;
+    const link = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=71ab7952b3fa31b7cc4330d1c11ee6aa`;
     await axios
       .get(link)
       .then((res) => {
